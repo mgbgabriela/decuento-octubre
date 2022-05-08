@@ -13,15 +13,15 @@ rotulo3.innerHTML = "Mes";
 
 let precioUnitario: number = Number(dato1.value);
 let cantidad: number = Number(dato2.value);
-let mes : number = Number (dato3.value);
+let mes : number = (dato3.value);
+let totalConDescuento:number= 0;
+let descuento: number= 0;
+let precioTotal:number= precioUnitario+cantidad;
 
 btnEnviar.addEventListener("click", () => {
-  let mes = "octubre";
-  let montoTotal: number = dato1*dato2;
-    if (mes === "octubre"); { montoTotal =(dato1*dato2)
-    console.log("Usted ha obtenido un 15 % de descuento, su total es",montoTotal );
- 
-  } else {
-    console.log("Usted NO ha obtenido el descuento");
+  if (mes =="octubre"); {
+    console.log("Usted ha obtenido un descuento del 20%")
+ } else {
+    console.log("Usted no ha obtenido el descuento");
   }
 });
